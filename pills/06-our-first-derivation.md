@@ -170,7 +170,7 @@ So out is just the derivation itself, it seems weird but the reason is that we o
 
 The `d.drvPath` is the path of the `.drv` file: `/nix/store/z3hhlxbckx4g3n9sw91nnvlkjvyw754p-myname.drv`.
 
-Something interesting is the `type` attribute. It's `"derivation"`. Nix does add a little of magic to sets with type derivation, but not that much. To help you understand, you can create yourself a set with that type, it's a simple set:
+Something interesting is the `type` attribute. It's `"derivation"`. Nix does add a little magic to sets with type derivation, but not that much. To help you understand, you can create yourself a set with that type, it's a simple set:
 
 ```console
 nix-repl> { type = "derivation"; }
